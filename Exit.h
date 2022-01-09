@@ -1,2 +1,3 @@
 #pragma once
-GameExit();
+void gameExit();
+int main();

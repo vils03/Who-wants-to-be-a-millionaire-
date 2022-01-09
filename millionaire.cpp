@@ -29,7 +29,7 @@ int main()
 			break;
 		case 3:
 			system("CLS");
-			GameExit();
+			gameExit();
 	}
 	return 0;
 }

@@ -1,9 +1,10 @@
 #include <iostream>
-#include <cstdlib>
+#include <cstdlib>   
 #include "Exit.h"
 using namespace std;
 
-void GameExit() {
+void gameExit() {
+
 	for (int i = 0; i < 35; ++i) {
 		cout << "*";
 	}
@@ -14,10 +15,14 @@ void GameExit() {
 	cout << endl << endl;
 	cout << "Are you sure you want to quit playing?" << endl;
 	cout << "0. Yes" << endl << "1. No" << endl;
-	int play;
-	cin >> play;
-	switch (play) {
-		case 0: 
-			return 0;
+	int choice;
+	cin >> choice;
+	switch (choice)  {
+	case 0: 
+		exit(EXIT_FAILURE);
+	case 1:
+		system("CLS");
+		main();
 	}
 }
+

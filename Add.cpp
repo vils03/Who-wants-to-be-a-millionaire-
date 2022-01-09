@@ -75,6 +75,8 @@ void question() {
 	cin >> category;
 	myFile << category << endl;
 	myFile.close();
+	system("CLS");
+	main();
 	
 	
 

@@ -38,6 +38,7 @@ void question() {
 		myFile.open("hard.txt", ios::app);
 		myFile << level << " ";
 	}
+
 	system("CLS");
 
 	namePrint();

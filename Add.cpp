@@ -5,13 +5,6 @@
 #include "Add.h"
 
 using namespace std;
-// на 1 ред въпрос
-
-//
-//bool validOption(string str) {
-//	char ch = str[0];
-//	return 'A' <= ch && ch <= 'D';
-//}
 
 bool validCategory(int n) {
 	return 1 <= n && n <= 4;
@@ -77,35 +70,20 @@ void question() {
 	namePrint();
 	string optionA, optionB, optionC, optionD;
 	cout << "Enter answers: " << endl;
+	cout << "A) ";
 	getline(cin, optionA);
 	char chA = optionA[0];
-	/*while (!validAnswer(chA)) {
-		cout << "Please, enter valid input!" << endl;
-		getline(cin, optionA);
-	}
-	*/
+	cout << "B) ";
 	getline(cin, optionB);
 	char chB = optionB[0];
-	/*while (!validAnswer(chB)) {
-		cout << "Please, enter valid input!" << endl;
-		getline(cin, optionB);
-	}*/
+	cout << "C) ";
 	getline(cin, optionC);
-	/*char chC = optionC[0];
-	while (!validAnswer(chC)) {
-		cout << "Please, enter valid input!" << endl;
-		getline(cin, optionC);
-	}*/
+	cout << "D) ";
 	getline(cin, optionD);
-	/*char chD = optionD[0];
-	while (!validAnswer(chD)) {
-		cout << "Please, enter valid input!" << endl;
-		getline(cin, optionD);
-	}*/
-	myFile << optionA << "|";
-	myFile << optionB << "|";
-	myFile << optionC << "|";
-	myFile << optionD << "|";
+	myFile << "A)" << optionA << "|";
+	myFile << "B)" << optionB << "|";
+	myFile << "C)" << optionC << "|";
+	myFile << "D)" << optionD << "|";
 	system("CLS");
 
 	namePrint();

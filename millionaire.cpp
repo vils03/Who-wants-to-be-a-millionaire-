@@ -49,8 +49,6 @@ int main()
 		system("CLS");
 		gameExit();
 	}
-	
-	
 	return 0;
 }
 

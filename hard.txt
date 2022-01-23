@@ -1,0 +1,2 @@
+22639 |Which is the capital of Estonia?|A)Tallin|B)Narva|C)Riga|D)Vilnius|A|1|
+23018 |Which is the lowest point on Earth?|A)Death Valley|B)Dead Sea|C)Lake Assal|D)Salton Sea|B|1|

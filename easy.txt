@@ -1,0 +1,4 @@
+19615|Which is the capital of Australia?|A)Sidni|B)Melbourne|C)Canberra|D)Brisbane|C|1|
+20461|Where is the Leaning tower of Pisa located?|A)Spain|B)Bulgaria|C)Italy|D)USA|C|1|
+20647|In which city is the Eiffel Tower?|A)Paris|B)California|C)Rome|D)Dubai|A|1|
+21094|Which is the highest peak in Europe?|A)Mont Blanc|B)Musala|C)Moldoveanu|D)Great Ararat|A|1|

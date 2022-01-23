@@ -1,0 +1,4 @@
+21561 |Which is the longest river in Europe?|A)The Volga River|B)Danube River|C)Ural River|D)Dnieper River|A|1|
+21865 |Which is the largest city in Turkey?|A)Ankara|B)Odrin|C)Istanbul|D)Izmir|C|1|
+22143 |Which is the capital of Lithuania?|A)Vilnius|B)Plunge|C)Riga|D)Sofia|A|1|
+22365 |How many countries are in the European union?|A)22|B)26|C)33|D)12|B|1|

@@ -2,3 +2,16 @@
 20461|Where is the Leaning tower of Pisa located?|A)Spain|B)Bulgaria|C)Italy|D)USA|C|1|
 20647|In which city is the Eiffel Tower?|A)Paris|B)California|C)Rome|D)Dubai|A|1|
 21094|Which is the highest peak in Europe?|A)Mont Blanc|B)Musala|C)Moldoveanu|D)Great Ararat|A|1|
+9453|How many years did the 100 years war last?|A)100|B)123|C)99|D)116|D|2|
+9574|In which year did Hitler commit suicide?|A)1948|B)1940|C)1945|D)1960|C|2|
+9714|Greenland was a colony of which country until 1981?|A)USA|B)England|C)Denmark|D)Canada|C|2|
+12866|Who painted the mural of "The Last Supper"?|A)Reambrandt|B)Van Gogh|C)Claude Monet|D)Leonardo da Vinci|D|2|
+13336|In the work of which of the listed artists is the city presented as a tomb for human destinies?|A)Hristo Smirnenski|B)Ivan Vazov|C)Hristo Botev|D)Geo Milev|A|3|
+14306|Which country banned Alice in Wonderland?|A)Japan|B)Germany|C)China|D)Spain|C|3|
+14472|What villain's name does Tom Riddle's name rearrange to?|A)Dr. Heinz Doofenshmirtz|B)Dr. Frankenstein|C)Voldemort|D)The Grinch|C|3|
+15511|What was an artistic, literary, musical, and intellectual movement that originated in Europe towards the end of the 18th century?|A)Realism|B)Romanticism|C)Baroque|D)Renaissance|B|3|
+19191|Combine terms: 12a + 26b -4b - 16a.|A)4a + 22b|B)-28a + 30b|C)-4a + 22b|D)28a + 30b|C|4|
+19726|If Logx (1 / 8) = - 3 / 2, then x is equal to|A)-4|B)4|C)1/4|D)10|B|4|
+19828|The period of 2 sin x cos x is|A)4 pi ^ 2|B)2 pi|C)4 pi|D)pi|D|4|
+19978|If f(x) is an odd function, then | f(x) | is|A)an odd function|B)an even function|C)neither|D)even and odd|B|4|
+21186|How many seconds are there in 12 minutes?|A)720|B)360|C)220|D)1440|A|4|

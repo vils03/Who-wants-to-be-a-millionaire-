@@ -2,3 +2,17 @@
 21865 |Which is the largest city in Turkey?|A)Ankara|B)Odrin|C)Istanbul|D)Izmir|C|1|
 22143 |Which is the capital of Lithuania?|A)Vilnius|B)Plunge|C)Riga|D)Sofia|A|1|
 22365 |How many countries are in the European union?|A)22|B)26|C)33|D)12|B|1|
+9835 |Which organization was awarded the Nobel Peace Prize in 1917?|A)NATO|B)The Red Cross|C)UNICEF|D)EU|B|2|
+10932 |How many days in a week were there in ancient Roman times?|A)5|B)6|C)7|D)8|D|2|
+11043 |How many U.S. presidents have been assassinated?|A)3|B)5|C)2|D)4|D|2|
+11243 |Who was shot outside the Hilton Hotel in Washington on March 30th, 1981?|A)Ronald Reagan|B)Abraham Lincoln |C)William McKinley|D)James A. Garfield|A|2|
+15096 |Which book was NOT written by Nicholas Sparks?|A)Every Breath|B)See me|C)The Notebook|D)The House of Gucci|D|3|
+15805 |How many plays Shakespeare wrote?|A)33|B)23|C)37|D)11|C|3|
+16232 |What is a question asked to make a point rather than in expectation of an answer?|A)Stupid question|B)Question for thinking|C)Rhetorical question|D)Ranking question|C|3|
+16745 |Who wrote the series of epic fantasy novels "A Song of Ice and Fire"?|A)George Raymond Richard Martin|B)David Benioff|C)J. K. Rowling|D)J. R. R. Tolkien|A|3|
+17434 |The Great Gatsby is written in which year?|A)1930|B)1940|C)1920|D)1925|D|3|
+17568 |"Crime and Punishment" is a novel by a Russian author named what?|A)Fyodor Dostoevsky|B)Pushkin|C)Ivan Turgenev|D)Mikhail Lermontov|A|3|
+20259 |20 % of 2 is equal to|A)20|B)4|C)0.4|D)0.04|C|4|
+20393 |A school committee consists of 2 teachers and 4 students. The number of different committees that can be formed from 5 teachers and 10 students is|A)10|B)15|C)2100|D)8|C|4|
+20491 |Five different books (A, B, C, D and E) are to be arranged on a shelf. Books C and D are to be arranged first and second starting from the right of the shelf. The number of different orders in which books A, B and E may be arranged is|A)5!|B)3!|C)2!|D)3!*2!|B|4|
+20745 |What is the next number in the series: 2, 9, 30, 93, :?|A)280|B)234|C)282|D)222|C|4|

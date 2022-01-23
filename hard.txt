@@ -1,2 +1,13 @@
 22639 |Which is the capital of Estonia?|A)Tallin|B)Narva|C)Riga|D)Vilnius|A|1|
 23018 |Which is the lowest point on Earth?|A)Death Valley|B)Dead Sea|C)Lake Assal|D)Salton Sea|B|1|
+11530 |Who was the first man to walk on the moon, and in which year?|A)Neil Armstrong, 1969|B)Neil Armstrong, 1977|C)Yuri Gagarin, 1969|D)Yuri Gagarin, 1977|A|2|
+11781 |Where were the first modern Olympics held?|A)Athens, Greece |B)London, UK|C)Istanbul, Turkey|D)Madrid, Spain|A|2|
+12144 |How many times has the Mona Lisa been stolen?|A)3|B)2|C)1|D)4|C|2|
+12216 |Which century did the French Revolution take place in?|A)18th|B)17th|C)19th|D)16th|A|2|
+17855 |'West Side Story,' a musical is based on a tragedy by Shakespeare. Which tragedy is it?|A)Antony and Cleopatra|B)Hamlet|C)Romeo and Juliet|D)Othello|C|3|
+18058 |Who is the author of the classic masterpiece "Anna Karenina"?|A)Ivan Vazov|B)Leo Tolstoy|C)Charles Dickens|D)Pushkin|B|3|
+18348 |Mention the exact number of sonnets written by William Shakespeare?|A)111|B)154|C)123|D)12|B|3|
+18508 |Who is the author of The Origin Of Species?|A)Darwin|B)Daniel Defoe|C)Dan Brown|D)Mary Arden|A|3|
+20866 |What is nine-tenths of 2000?|A)1800|B)1234|C)900|D)600|A|4|
+21020 |How many vertices are there on a tetrahedron?|A)4|B)5|C)6|D)7|A|4|
+21095 |What is the square root of 484?|A)22|B)24|C)14|D)12|A|4|

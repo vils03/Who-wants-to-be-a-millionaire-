@@ -1,3 +1,18 @@
+/**
+*
+* Solution to course project # 5
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Velislava Krumova
+* @idnumber 0MI0600007
+* @compiler VC
+*
+* <main file>
+*
+*/
+
 #include <iostream>
 #include <iomanip>
 #include "Add.h"
@@ -34,19 +49,19 @@ int main()
 	}
 	switch (choice) {
 	case 0:
-		system("CLS");
+		cout << "\x1B[2J\x1B[H";
 		newGame();
 		break;
 	case 1:
-		system("CLS");
+		cout << "\x1B[2J\x1B[H";
 		question();
 		break;
 	case 2:
-		system("CLS");
+		cout << "\x1B[2J\x1B[H";
 		EditQuestion();
 		break;
 	case 3:
-		system("CLS");
+		cout << "\x1B[2J\x1B[H";
 		gameExit();
 	}
 	return 0;

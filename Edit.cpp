@@ -1,3 +1,19 @@
+/**
+*
+* Solution to course project # 5
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Velislava Krumova
+* @idnumber 0MI0600007
+* @compiler VC
+*
+* <file with functions to edit questions>
+*
+*/
+
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -90,7 +106,7 @@ void EditQuestion() {
 			cin >> id;
 		}
 		if (id == stoi(questArray[0])) {
-			system("CLS");
+			cout << "\x1B[2J\x1B[H";
 			nname();
 			cout << "Enter the level of difficulty of your question (1-10):";
 			int level;
@@ -115,7 +131,7 @@ void EditQuestion() {
 				myFile << id << " " << "|";
 			}
 
-			system("CLS");
+			cout << "\x1B[2J\x1B[H";
 
 			nname();
 			string question;
@@ -123,7 +139,7 @@ void EditQuestion() {
 			cin.ignore();
 			getline(cin, question);
 			myFile << question << "|";
-			system("CLS");
+			cout << "\x1B[2J\x1B[H";
 
 			nname();
 			string optionA, optionB, optionC, optionD;
@@ -141,7 +157,7 @@ void EditQuestion() {
 			myFile << "B)" << optionB << "|";
 			myFile << "C)" << optionC << "|";
 			myFile << "D)" << optionD << "|";
-			system("CLS");
+			cout << "\x1B[2J\x1B[H";
 
 			nname();
 			char rightAnswer;
@@ -157,7 +173,7 @@ void EditQuestion() {
 			cout << "1. Geography" << endl;
 			cout << "2. History" << endl;
 			cout << "3. Literature" << endl;
-			cout << "4. Art" << endl;
+			cout << "4. Math" << endl;
 			cin >> category;
 			while (!validCateg(category)) {
 				cout << "Please, enter number betwee 1 and 4!" << " ";
@@ -165,7 +181,7 @@ void EditQuestion() {
 			}
 			myFile << category << "|" << endl;
 			myFile.close();
-			system("CLS");
+			cout << "\x1B[2J\x1B[H";
 			main();
 		}
 		

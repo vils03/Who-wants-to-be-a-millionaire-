@@ -1,3 +1,19 @@
+/**
+*
+* Solution to course project # 5
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Velislava Krumova
+* @idnumber 0MI0600007
+* @compiler VC
+*
+* <file with functions to strat new game>
+*
+*/
+
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -7,6 +23,24 @@
 #include "NewGame.h"
 
 using namespace std;
+
+int toDigit(string cat) {
+	if (cat == "1") {
+		return 1;
+	}
+	else if (cat == "2") {
+		return 2;
+	}
+	else if (cat == "3") {
+		return 3;
+	}
+	else if (cat == "4") {
+		return 4;
+	}
+	else if (cat == "5") {
+		return 5;
+	}
+}
 
 void name() {
 	for (int i = 0; i < 35; ++i) {
@@ -26,23 +60,24 @@ int randomNumber(vector <int> v) {
 	return sel_elem;
 }
 
+string randomSymbol(vector <string> v) {
+	srand(time(NULL));
+	int random = rand() % v.size();
+	string sel_elem = v[random];
+	return sel_elem;
+}
+
 void wrongPrize(int money, string right) {
-	system("CLS");
+	cout << "\x1B[2J\x1B[H";
 	name();
 	cout << "Wrong answer :(" << endl;
 	cout << "The right answer was " << right << "." << endl;
 	cout << "You won " << money << "$.";
 	cout << endl << endl;
-	/*cout << "Press B to go back to main menu...";*/
-	/*char ch;
-	cin >> ch;
-	if (ch == 'B') {
-		int main();
-	}*/
 }
 
 void rightPrize(int money) {
-	system("CLS");
+	cout << "\x1B[2J\x1B[H";
 	name();
 	cout << "Right answer :)" << endl;
 	cout << "You won " << money << " $.";
@@ -94,15 +129,34 @@ vector <string> questionArray(string line) {
 }
 
 bool validCat(int n) {
-	return 1 <= n && n <= 4;
+	return 1 <= n && n <= 5;
+}
+
+void fiftyFifty(vector <string> array) {
+	vector <string> options;
+	for (int i = 2; i < 6; ++i) {
+		if (array[i] != array[6]) {
+			options.push_back(array[i]);
+		}
+	}
+	string random1 = randomSymbol(array);
+	for (int i = 2; i < 6; ++i) {
+		if (random1 == array[i]) {
+			options.erase(remove(options.begin(), options.end(), random1), options.end());
+		}
+	}
+	for (auto i : options)
+		cout << i << ' ';
+	string random2 = randomSymbol(array);
+	
 }
 
 void getQuestion(vector <int> getID, vector <string> array, int& prize, int& questions) {
 	int now = randomNumber(getID);
-	if (now == stoi(array[0])) {
-		system("CLS");
+	if (now == toDigit(array[0])) {
+		cout << "\x1B[2J\x1B[H";
 		name();
-		cout << questions << ". " << array[1] << endl;
+		cout << array[1] << endl;
 		cout << array[2] << endl;
 		cout << array[3] << endl;
 		cout << array[4] << endl;
@@ -113,66 +167,84 @@ void getQuestion(vector <int> getID, vector <string> array, int& prize, int& que
 		if (answer == array[6]) {
 			prize += 100;
 			rightPrize(prize);
-			system("pause");
+			cout << "\x1B[2J\x1B[H";
 		}
 		else {
 			wrongPrize(prize, array[6]);
 		}
 	}
-
 }
 void newGame(){
-	int prize = 0;
 	name();
 	cout << setfill(' ') << setw(57) << "Choose category" << endl;
 	cout << setfill(' ') << setw(55) << "1.Geography" << endl;
 	cout << setfill(' ') << setw(53) << "2.History" << endl;
 	cout << setfill(' ') << setw(56) << "3.Literature" << endl;
-	cout << setfill(' ') << setw(49) << "4.Art" << endl << endl;
+	cout << setfill(' ') << setw(50) << "4.Math" << endl << endl;
 	cout << setfill(' ') << setw(60) << "Enter your choice: ";
 	int category;
+	int questions = 1;
+	vector <string> array;
+	vector <int> getID;
+	string line;
+	int prize = 0;
 	cin >> category;
 	while (!validCat(category)) {
 		cout << "Please, enter number from 1 to 4." << " ";
 		cin >> category;
 	}
 	fstream myFile;
-	string line;
-	vector <string> array;
-	vector <int> getID;
-	int questions = 1;
-		while (1<= questions && questions <= 3) {
-			ifstream myFile("easy.txt");
-			while (getline(myFile, line)) {
-				array = questionArray(line);
-				if (stoi(array[7]) == category) {
-					getID.push_back(stoi(array[0]));
-				}	
-				getQuestion(getID, array, prize, questions);
-				++questions;
-			}
-		}
-		while (4 <= questions && questions <= 7) {
-			ifstream myFile("medium.txt");
-			while (getline(myFile, line)) {
-				array = questionArray(line);
-				if (stoi(array[7]) == category) {
-					getID.push_back(stoi(array[0]));
-				}
-			}
-			getQuestion(getID, array, prize, questions);
+	unsigned counter = 0;
+	myFile.open("easy.txt");
+	while (getline(myFile, line)) {
+		array = questionArray(line);
+		if (toDigit(array[7]) == category ) {
+			getID.push_back(toDigit(array[0]));
 			++questions;
 		}
-		while (8 <= questions && questions <= 10) {
-			ifstream myFile("hard.txt");
-			while (getline(myFile, line)) {
-				array = questionArray(line);
-				if (stoi(array[7]) == category) {
-					getID.push_back(stoi(array[0]));
-				}
-			}
+		if (questions > 1 && counter < 3)
+		{
 			getQuestion(getID, array, prize, questions);
-			++questions;
+			counter++;
 		}
+		
+	}
 	myFile.close();
+	counter = 0;
+	bool forif = false;
+	fstream myfile;
+	myfile.open("medium.txt");
+	while (getline(myfile, line)) {
+		array = questionArray(line);
+		if (toDigit(array[7]) == category) {
+			getID.push_back(toDigit(array[0]));
+			++questions;
+			forif = true;
+		}
+		if (questions > 1 && counter < 4&&forif)
+		{
+			getQuestion(getID, array, prize, questions);
+			counter++;
+		}
+		forif = false;
+		
+	}
+	myfile.close();
+	counter = 0;
+	fstream File;
+	File.open("hard.txt");
+	while (getline(File, line)) {
+		array = questionArray(line);
+		if (toDigit(array[7]) == category) {
+			getID.push_back(toDigit(array[0]));
+			++questions;
+		}
+		if (questions > 1 && counter < 3 && forif)
+		{
+			getQuestion(getID, array, prize, questions);
+			counter++;
+		}
+	}
+	File.close();
 }
+

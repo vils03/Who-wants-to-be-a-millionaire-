@@ -1,3 +1,19 @@
+/**
+*
+* Solution to course project # 5
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Velislava Krumova
+* @idnumber 0MI0600007
+* @compiler VC
+*
+* <file with functions to add question>
+*
+*/
+
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -19,8 +35,6 @@ int generateRandom() {
 	int random_variable = rand();
 	return random_variable;
 }
-
-
 
 void namePrint(){
 	for (int i = 0; i < 35; ++i) {
@@ -57,7 +71,7 @@ void question() {
 		myFile << id << " " << "|";
 	}
 
-	system("CLS");
+	cout << "\x1B[2J\x1B[H";
 
 	namePrint();
 	string question;
@@ -65,7 +79,7 @@ void question() {
 	cin.ignore();
 	getline (cin, question);
 	myFile << question << "|";
-	system("CLS");
+	cout << "\x1B[2J\x1B[H";
 
 	namePrint();
 	string optionA, optionB, optionC, optionD;
@@ -84,7 +98,7 @@ void question() {
 	myFile << "B)" << optionB << "|";
 	myFile << "C)" << optionC << "|";
 	myFile << "D)" << optionD << "|";
-	system("CLS");
+	cout << "\x1B[2J\x1B[H";
 
 	namePrint();
 	char rightAnswer;
@@ -100,7 +114,7 @@ void question() {
 	cout << "1. Geography" << endl;
 	cout << "2. History" << endl;
 	cout << "3. Literature" << endl;
-	cout << "4. Art" << endl;
+	cout << "4. Math" << endl;
 	cin >> category;
 	while (!validCategory(category)) {
 		cout << "Please, enter number betwee 1 and 4!" << " ";
@@ -108,7 +122,7 @@ void question() {
 	}
 	myFile << category << "|" << endl;
 	myFile.close();
-	system("CLS");
+	cout << "\x1B[2J\x1B[H";
 	main();
 	
 	

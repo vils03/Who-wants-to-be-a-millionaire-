@@ -1,3 +1,19 @@
+/**
+*
+* Solution to course project # 5
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Velislava Krumova
+* @idnumber 0MI0600007
+* @compiler VC
+*
+* <file to functions to exit the program>
+*
+*/
+
+
 #include <iostream>
 #include <cstdlib>   
 #include "Exit.h"
@@ -29,7 +45,7 @@ void gameExit() {
 	case 0: 
 		exit(EXIT_FAILURE);
 	case 1:
-		system("CLS");
+		cout << "\x1B[2J\x1B[H";
 		main();
 	}
 }
